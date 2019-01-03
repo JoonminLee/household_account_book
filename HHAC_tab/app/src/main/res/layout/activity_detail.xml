@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <!--달력보기, 총 수입, 총 지출 바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--달력 보기-->
+        <Button
+            android:id="@+id/gotoCalendar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="달력보기"
+            android:textAllCaps="false" />
+
+        <!--총 수입, 총 지출 테이블-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp">
+
+            <!--첫번째 행-->
+            <TableRow>
+
+                <!--첫번째 셀-->
+                <TextView
+                    android:layout_weight="0.5"
+                    android:gravity="end"
+                    android:text="총 수입 : " />
+
+                <!--두번째 셀 : 총 수입 값 출력-->
+                <TextView
+                    android:id="@+id/hhac_income_sum"
+                    android:layout_weight="2"
+                    android:textColor="#0011ff" />
+            </TableRow>
+
+            <!--두번째 행-->
+            <TableRow>
+
+                <!--첫번째 셀-->
+                <TextView
+                    android:layout_weight="0.5"
+                    android:gravity="end"
+                    android:text="총 지출 : " />
+
+                <!--두번째 셀 : 총 지출 값 출력-->
+                <TextView
+                    android:id="@+id/hhac_cost_sum"
+                    android:layout_weight="2"
+                    android:textColor="#ff0000" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <!--어제, 내일 버튼 및 오늘 날짜-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--어제-->
+        <Button
+            android:id="@+id/prev_date"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어제" />
+
+        <!--오늘 일자-->
+        <TextView
+            android:id="@+id/hhac_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:hint="date" />
+
+        <!--내일-->
+        <Button
+            android:id="@+id/next_date"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내일" />
+    </LinearLayout>
+
+    <!--수입/지출, 내용, 금액 목록 바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--첫번째 행-->
+            <TableRow>
+
+                <!-- 첫번째 셀 : +/- -->
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+/-" />
+
+                <!-- 두번째 셀 : 내용-->
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="내용" />
+
+                <!-- 세번째 셀 : 금액-->
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="금액" />
+
+            </TableRow>
+        </TableLayout>
+
+        <!--내역을 출력해주기 위한 리스트 뷰-->
+        <ListView
+            android:id="@+id/account_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+    <!--내용, 금액 입력창 및 수입, 지출 버튼 바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--내용 입력창-->
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="내용" />
+
+        <!-- 금액 입력창-->
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="금액" />
+
+        <!--수입 입력 버튼-->
+        <Button
+            android:id="@+id/incomebtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="수입" />
+
+        <!--지출 입력 버튼-->
+        <Button
+            android:id="@+id/costbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="지출" />
+
+    </LinearLayout>
+
+</LinearLayout>

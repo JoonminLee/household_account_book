@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="전체검색"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="검색"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    </LinearLayout>
+    <!--수입/지출, 내용, 금액 목록 바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <!--첫번째 행-->
+            <TableRow>
+
+                <!-- 첫번째 셀 : +/- -->
+                <TextView
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="+/-" />
+
+                <!-- 두번째 셀 : 날짜-->
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="날짜" />
+
+                <!-- 세번째 셀 : 내용-->
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="내용" />
+
+                <!-- 네번째 셀 : 금액-->
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="금액" />
+
+            </TableRow>
+        </TableLayout>
+
+        <!--내역을 출력해주기 위한 리스트 뷰-->
+        <ListView
+            android:id="@+id/search_account_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

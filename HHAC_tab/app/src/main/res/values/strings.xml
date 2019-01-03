@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">꿀꿀가계부</string>
+    <string name="tab_text_1">달력보기</string>
+    <string name="tab_text_2">최근/검색</string>
+    <string name="tab_text_3">통계그래프</string>
+    <string name="tab_text_4">계산기</string>
+    <string name="channel_id">notificationChannel1</string>
+    <string name="channel_name">notificationName1</string>
+</resources>
