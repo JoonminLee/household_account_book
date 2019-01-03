@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#0074a8</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBlue">#00F</color>
+    <color name="honeydew">#F0FF</color>
+    <color name="mistyrose">#ffe4</color>
+    <color name="lavender">#e6e6</color>
+    <color name="defaultblack">#ffffff</color>
 </resources>

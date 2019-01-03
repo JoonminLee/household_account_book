@@ -48,6 +48,22 @@ public class MainActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
+        Intent intent = getIntent();
+        String color = intent.getStringExtra("bgcolor");
+        if (color != null) {
+            if (color.equals("honeydew")) {
+                mViewPager.setBackgroundColor(getResources().getColor(R.color.honeydew));
+            }
+            else if(color.equals("mistyrose")){
+                mViewPager.setBackgroundColor(getResources().getColor(R.color.mistyrose));
+            }
+            else if(color.equals("lavender")){
+                mViewPager.setBackgroundColor(getResources().getColor(R.color.lavender));
+
+            } else if(color.equals("defaultwhite")){
+                mViewPager.setBackgroundColor(getResources().getColor(R.color.defaultblack));
+            }
+        }
     }
 
     @Override
@@ -60,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.settingBtn:
-                
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
                 break;
         }
         return true;

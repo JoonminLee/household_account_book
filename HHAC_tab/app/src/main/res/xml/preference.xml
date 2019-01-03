@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="글꼴 지정">
+        <SwitchPreference
+            android:defaultValue="1"
+            android:key="key_backgroundcolor"
+            android:summary="배경색을 지정합니다"
+            android:title="배경색 사용" />
+        <ListPreference
+            android:defaultValue="1"
+            android:dependency="key_backgroundcolor"
+            android:key="key_dialog_backgroundcolor"
+            android:title="배경색설정"
+            android:entries="@array/BackgroundColor"
+            android:entryValues="@array/BackgroundColor"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"/>
+    </PreferenceCategory>
+</PreferenceScreen>
