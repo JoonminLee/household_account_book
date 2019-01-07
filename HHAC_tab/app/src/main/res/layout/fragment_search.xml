@@ -6,11 +6,12 @@
     android:orientation="vertical"
     tools:context=".SearchActivity">
 
+    <!-- 검색 창 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginVertical="@dimen/activity_vertical_margin">
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/search_content"
@@ -30,7 +31,8 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
     </LinearLayout>
-    <!--수입/지출, 내용, 금액 목록 바-->
+
+    <!-- 수입/지출, 내용, 금액 목록 바 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

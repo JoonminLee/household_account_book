@@ -1,5 +1,7 @@
 package com.example.jay.hhac_tab;
 
+import android.util.Log;
+
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 

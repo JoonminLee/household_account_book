@@ -164,8 +164,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:inputType="number"
-            android:hint="금액" />
+            android:hint="금액"
+            android:inputType="number" />
 
         <!--수입 입력 버튼-->
         <Button

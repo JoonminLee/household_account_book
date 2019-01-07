@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "79549620732",
-    "firebase_url": "https://hhac-f8cf3.firebaseio.com",
-    "project_id": "hhac-f8cf3",
-    "storage_bucket": "hhac-f8cf3.appspot.com"
+    "project_number": "727712316139",
+    "firebase_url": "https://hhac-a75d1.firebaseio.com",
+    "project_id": "hhac-a75d1",
+    "storage_bucket": "hhac-a75d1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:79549620732:android:c48d4bdfb84331a5",
+        "mobilesdk_app_id": "1:727712316139:android:c48d4bdfb84331a5",
         "android_client_info": {
           "package_name": "com.example.jay.hhac_tab"
         }
       },
       "oauth_client": [
         {
-          "client_id": "79549620732-5c1tg1fl5lcoutsvigunj8krb22m6ktv.apps.googleusercontent.com",
+          "client_id": "727712316139-gm7l20g284135bmqiapb98tqlhangmis.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.jay.hhac_tab",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "79549620732-0mgnugsqel65vrq8fg2cm83hn554j7pi.apps.googleusercontent.com",
+          "client_id": "727712316139-e9pdfp6qujcib1ff54ir21od067im0e5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQxzlU95wEWEXlLrORKMpp17ys0pRl9FA"
+          "current_key": "AIzaSyAE0HV3UBSgjCLhkh-9QooAM2ffbrzDvl4"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "79549620732-0mgnugsqel65vrq8fg2cm83hn554j7pi.apps.googleusercontent.com",
+              "client_id": "727712316139-e9pdfp6qujcib1ff54ir21od067im0e5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

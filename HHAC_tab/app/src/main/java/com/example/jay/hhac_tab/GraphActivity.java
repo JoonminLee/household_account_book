@@ -35,29 +35,18 @@ import java.util.List;
 
 public class GraphActivity extends Fragment {
 
-    //DB관련 변수 설정
     DBHelper dbh;
     SQLiteDatabase db;
     Cursor cursor;
-
-    //차트 변수 설정
     LineChart lineChart;
     BarChart barChart;
-
-    //캘린더 변수
     private static Calendar Cal = Calendar.getInstance();
-
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
     private String mParam1;
     private String mParam2;
-
     private OnFragmentInteractionListener mListener;
-
-    //현재 년도
     int thisYear = Cal.get(Calendar.YEAR);
-
     Button prevYear, nowYear;
     TextView txt_thisYear;
 
@@ -96,7 +85,6 @@ public class GraphActivity extends Fragment {
         String csql;
         String sum;
 
-        //데이터베이스 설정
         dbh = new DBHelper(getActivity());
         db = dbh.getWritableDatabase();
 

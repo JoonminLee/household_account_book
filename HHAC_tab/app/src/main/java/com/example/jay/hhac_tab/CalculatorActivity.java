@@ -27,20 +27,14 @@ public class CalculatorActivity extends Fragment {
     TextView calc_result;
     TextView calc_ing;
     ListView result_list;
-
-
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button btnC, btnAbsol, btnDel, btnDot;
     Button btnDiv, btnMul, btnSub, btnPlus, btnEqual;
-
     String data;
-
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
     private String mParam1;
     private String mParam2;
-
     private OnFragmentInteractionListener mListener;
 
     public CalculatorActivity() {
